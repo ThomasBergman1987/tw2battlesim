@@ -1,0 +1,181 @@
+/* ############################################################ */
+/* Estilos para formulario                                      */
+/* ############################################################ */
+body{ 
+        
+    background: rgba(243,226,199,1);
+    background: -moz-linear-gradient(top, rgba(243,226,199,1) 0%, rgba(182,141,76,1) 0%, rgba(193,158,103,1) 8%, rgba(215,188,145,1) 59%, rgba(233,212,179,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(243,226,199,1)), color-stop(0%, rgba(182,141,76,1)), color-stop(8%, rgba(193,158,103,1)), color-stop(59%, rgba(215,188,145,1)), color-stop(100%, rgba(233,212,179,1)));
+    background: -webkit-linear-gradient(top, rgba(243,226,199,1) 0%, rgba(182,141,76,1) 0%, rgba(193,158,103,1) 8%, rgba(215,188,145,1) 59%, rgba(233,212,179,1) 100%);
+    background: -o-linear-gradient(top, rgba(243,226,199,1) 0%, rgba(182,141,76,1) 0%, rgba(193,158,103,1) 8%, rgba(215,188,145,1) 59%, rgba(233,212,179,1) 100%);
+    background: -ms-linear-gradient(top, rgba(243,226,199,1) 0%, rgba(182,141,76,1) 0%, rgba(193,158,103,1) 8%, rgba(215,188,145,1) 59%, rgba(233,212,179,1) 100%);
+    background: linear-gradient(to bottom, rgba(243,226,199,1) 0%, rgba(182,141,76,1) 0%, rgba(193,158,103,1) 8%, rgba(215,188,145,1) 59%, rgba(233,212,179,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', endColorstr='#e9d4b3', GradientType=0 );
+ }
+#calcFramework{ display:block; }
+#calcFramework h3,#calcFramework h4, #calcFramework h2{
+    color: white;
+}
+#calcFramework h1{ 
+    text-align: center; 
+}
+#calcFramework h3{ 
+    margin-left: 15px;
+}
+#calcFramework h4{
+    margin-bottom: 0;
+}
+#calcFramework div{
+    border: 1px solid white;
+    -webkit-border-radius: 15px; 
+    -moz-border-radius: 15px; 
+    border-radius: 15px; 
+    margin-bottom: 5px;
+}
+#calcFramework div:first-child{
+    margin-right: 8px;
+    width: 49%;
+}
+#calcFramework input, #calcFramework select{
+    -webkit-border-radius: 12px; 
+    -moz-border-radius: 12px; 
+    border-radius: 12px; 
+    float: right;
+    margin: 0.24em;
+    width: 6.4em;
+    text-align: right;
+    height: 29px !important;
+}
+#div_troops{ display: block; }
+#div_attack,#div_defense{ border: 0 !important; width: 45%; }
+#div_modifiers{
+    background: rgba(243,226,199,1);
+    background: -moz-linear-gradient(top, rgba(243,226,199,1) 0%, rgba(182,141,76,1) 0%, rgba(193,158,103,1) 47%, rgba(233,212,179,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(243,226,199,1)), color-stop(0%, rgba(182,141,76,1)), color-stop(47%, rgba(193,158,103,1)), color-stop(100%, rgba(233,212,179,1)));
+    background: -webkit-linear-gradient(top, rgba(243,226,199,1) 0%, rgba(182,141,76,1) 0%, rgba(193,158,103,1) 47%, rgba(233,212,179,1) 100%);
+    background: -o-linear-gradient(top, rgba(243,226,199,1) 0%, rgba(182,141,76,1) 0%, rgba(193,158,103,1) 47%, rgba(233,212,179,1) 100%);
+    background: -ms-linear-gradient(top, rgba(243,226,199,1) 0%, rgba(182,141,76,1) 0%, rgba(193,158,103,1) 47%, rgba(233,212,179,1) 100%);
+    background: linear-gradient(to bottom, rgba(243,226,199,1) 0%, rgba(182,141,76,1) 0%, rgba(193,158,103,1) 47%, rgba(233,212,179,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', endColorstr='#e9d4b3', GradientType=0 );
+    padding: 2px;
+}
+    #div_modifiers div{ 
+        width: 47%;
+        margin: 5px;
+    }
+    #div_modifiers div{ 
+        border: 0;
+    }
+    #div_modifiers select{ 
+         width: 65px;
+         margin: 0;
+    }
+    #div_modifiers p{ 
+        border: 1px solid white;
+        -webkit-border-radius: 12px; 
+        -moz-border-radius: 12px; 
+        border-radius: 12px; 
+        height: 45px;
+        padding: 5px; 
+    }
+    #div_modifiers label{
+        float: right;
+        width: 20%;
+    }
+    #div_modifiers #switch, #div_modifiers #grandmaster{
+        width:0;
+    }
+
+#div_button,#div_button div{ border: 0 !important; }
+#div_button input{
+    margin-top: 20px;
+    margin-right: -10px;
+    text-align: center;
+    width: 30em;
+    background-color: #c4a36e;
+}
+
+/* ############################################################ */
+/* Estilos para resultados                                      */
+/* ############################################################ */
+    table{
+        margin-left: 5px;
+        margin-bottom: 1em;
+
+    }
+    td,th{
+        text-align: left;
+        padding-bottom: 6px;
+    }
+    .round{
+        border: 1px solid white;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        border-radius: 12px;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+    .coin{
+        width: 74%;
+        margin: 7px 0px;
+    }
+    button{
+        margin-left: 2px;
+        margin-bottom: 0.5em !important;
+    }
+
+/* ############################################################ */
+/* Estilos para versión responsive                              */
+/* ############################################################ */
+
+@media (max-width: 1020px) and (min-width: 768px){
+    #div_troops, #div_modifiers{
+        width: 97% !important;
+    }
+    #div_button{
+        height: 50px;
+    }
+    #div_button input{
+        margin-left: 16em;
+    }
+}
+
+@media (max-width:767px) {
+    #calcFramework{ 
+        padding-left:5px;
+        padding-right:5px;
+     }
+    #div_troops{
+        border:1px solid red;
+        width: 100% !important;
+        margin: 8px;
+        border: 0 !important;
+    }
+    #div_attack,#div_attack input,#div_defense input{
+        width: auto;
+    }
+    #div_defense{ width: 100%;}
+    #div_defense{float:left !important;}
+    #div_modifiers{ clear: both; }
+    #div_modifiers div {
+        width: 100% !important;
+    }
+    #div_button input{
+        margin-left: -28px;
+    }
+    #div_button{
+        height: 50px;
+    }
+
+    .coin{
+        width: auto;
+        margin: 7px 0px;
+    }
+    td{
+        font-size:0.6em;
+        border-right: 1px solid white;
+        padding: 1px;
+        text-align: center;
+    }
+
+}

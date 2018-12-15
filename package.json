@@ -1,0 +1,23 @@
+{
+  "name": "tw2battlesim",
+  "version": "1.0.0",
+  "description": "TW2 Battle Simulator",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node app"
+  },
+  "author": "David Martínez",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "debug": "^3.1.0",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0"
+  },
+  "devDependencies": {
+    "electron": "^1.7.10",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  }
+}

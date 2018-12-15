@@ -1,0 +1,243 @@
+  <div class="container" >
+    <div class="row">
+        <div class="col-sm-9" id="calcFramework"> <!-- #cambio# -->
+            <h2>Results</h2>
+            <div class="round"> <!-- #cambio# -->
+                <table class="u-full-width">
+                    <thead>
+                        <tr>
+                            <th>Unit</th>
+                            <th>
+                                <i class="ra ra-spades ra-lg"></i>
+                            </th>
+                            <th>
+                                <i class="ra ra-sword ra-lg"></i>
+                            </th>
+                            <th>
+                                <i class="ra ra-axe ra-lg"></i>
+                            </th>
+                            <th>
+                                <i class="ra ra-archer ra-lg"></i>
+                            </th>
+                            <th>
+                                <i class="ra ra-horseshoe ra-lg"></i>
+                                <i class="ra ra-grappling-hook"></i>
+                            </th>
+                            <th>
+                                <i class="ra ra-horseshoe ra-lg"></i>
+                                <i class="ra ra-arrow-flights"></i>
+                            </th>
+                            <th>
+                                <i class="ra ra-horseshoe ra-lg"></i>
+                                <i class="ra ra-broadhead-arrow"></i>
+                            </th>
+                            <th>
+                                <i class="ra ra-thorny-vine ra-lg"></i>
+                            </th>
+                            <th>
+                                <i class="ra ra-burning-meteor ra-lg"></i>
+                            </th>
+                            <th>
+                                <i class="ra ra-dripping-sword ra-lg"></i>
+                            </th>
+                            <th>
+                                <i class="ra ra-heavy-fall ra-lg"></i>
+                            </th>
+                            <th>
+                                <i class="ra ra-crown ra-lg"></i>
+                            </th>
+                            <th>
+                                <i class="ra ra-aura ra-lg"></i>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Offense</td>
+                            <td>{{attacker.spearmen}}</td>
+                            <td>{{attacker.swordsmen}}</td>
+                            <td>{{attacker.axemen}}</td>
+                            <td>{{attacker.archers}}</td>
+                            <td>{{attacker.lightCavalry}}</td>
+                            <td>{{attacker.mountedArchers}}</td>
+                            <td>{{attacker.heavyCavalry}}</td>
+                            <td>{{attacker.rams}}</td>
+                            <td>{{attacker.catapults}}</td>
+                            <td>{{attacker.berserkers}}</td>
+                            <td>{{attacker.trebuchets}}</td>
+                            <td>{{attacker.noblemen}}</td>
+                            <td>{{attacker.paladin}}</td>
+                        </tr>
+                        <tr style="color: red">
+                            <td>Dead</td>
+                            <td>{{attackerDead.spearmen}}</td>
+                            <td>{{attackerDead.swordsmen}}</td>
+                            <td>{{attackerDead.axemen}}</td>
+                            <td>{{attackerDead.archers}}</td>
+                            <td>{{attackerDead.lightCavalry}}</td>
+                            <td>{{attackerDead.mountedArchers}}</td>
+                            <td>{{attackerDead.heavyCavalry}}</td>
+                            <td>{{attackerDead.rams}}</td>
+                            <td>{{attackerDead.catapults}}</td>
+                            <td>{{attackerDead.berserkers}}</td>
+                            <td>{{attackerDead.trebuchets}}</td>
+                            <td>{{attackerDead.noblemen}}</td>
+                            <td>{{attackerDead.paladin}}</td>
+                        </tr>
+                        <tr>
+                            <td>Revived</td>
+                            <td>{{attackerRevived.spearmen}}</td>
+                            <td>{{attackerRevived.swordsmen}}</td>
+                            <td>{{attackerRevived.axemen}}</td>
+                            <td>{{attackerRevived.archers}}</td>
+                            <td>{{attackerRevived.lightCavalry}}</td>
+                            <td>{{attackerRevived.mountedArchers}}</td>
+                            <td>{{attackerRevived.heavyCavalry}}</td>
+                            <td>{{attackerRevived.rams}}</td>
+                            <td>{{attackerRevived.catapults}}</td>
+                            <td>{{attackerRevived.berserkers}}</td>
+                            <td>{{attackerRevived.trebuchets}}</td>
+                            <td>{{attackerRevived.noblemen}}</td>
+                            <td>{{attackerRevived.paladin}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                {{#if attmodOk}}
+                <button class="btn btn-success" disabled>{{attmod}}%</button>
+                {{else}}
+                <button class="btn btn-danger" disabled>{{attmod}}%</button>
+                {{/if}}
+            </div>
+
+            <div class="round"> <!-- #cambio# -->
+                <table class="u-full-width">
+                    <thead>
+                        <tr>
+                            <th>Unit</th>
+                            <th>
+                                <i class="ra ra-spades ra-lg"></i>
+                            </th>
+                            <th>
+                                <i class="ra ra-sword ra-lg"></i>
+                            </th>
+                            <th>
+                                <i class="ra ra-axe ra-lg"></i>
+                            </th>
+                            <th>
+                                <i class="ra ra-archer ra-lg"></i>
+                            </th>
+                            <th>
+                                <i class="ra ra-horseshoe ra-lg"></i>
+                                <i class="ra ra-grappling-hook"></i>
+                            </th>
+                            <th>
+                                <i class="ra ra-horseshoe ra-lg"></i>
+                                <i class="ra ra-arrow-flights"></i>
+                            </th>
+                            <th>
+                                <i class="ra ra-horseshoe ra-lg"></i>
+                                <i class="ra ra-broadhead-arrow"></i>
+                            </th>
+                            <th>
+                                <i class="ra ra-thorny-vine ra-lg"></i>
+                            </th>
+                            <th>
+                                <i class="ra ra-burning-meteor ra-lg"></i>
+                            </th>
+                            <th>
+                                <i class="ra ra-dripping-sword ra-lg"></i>
+                            </th>
+                            <th>
+                                <i class="ra ra-heavy-fall ra-lg"></i>
+                            </th>
+                            <th>
+                                <i class="ra ra-crown ra-lg"></i>
+                            </th>
+                            <th>
+                                <i class="ra ra-aura ra-lg"></i>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Defense</td>
+                            <td>{{defender.spearmen}}</td>
+                            <td>{{defender.swordsmen}}</td>
+                            <td>{{defender.axemen}}</td>
+                            <td>{{defender.archers}}</td>
+                            <td>{{defender.lightCavalry}}</td>
+                            <td>{{defender.mountedArchers}}</td>
+                            <td>{{defender.heavyCavalry}}</td>
+                            <td>{{defender.rams}}</td>
+                            <td>{{defender.catapults}}</td>
+                            <td>{{defender.berserkers}}</td>
+                            <td>{{defender.trebuchets}}</td>
+                            <td>{{defender.noblemen}}</td>
+                            <td>{{defender.paladin}}</td>
+                        </tr>
+                        <tr style="color: red">
+                            <td>Dead</td>
+                            <td>{{defenderDead.spearmen}}</td>
+                            <td>{{defenderDead.swordsmen}}</td>
+                            <td>{{defenderDead.axemen}}</td>
+                            <td>{{defenderDead.archers}}</td>
+                            <td>{{defenderDead.lightCavalry}}</td>
+                            <td>{{defenderDead.mountedArchers}}</td>
+                            <td>{{defenderDead.heavyCavalry}}</td>
+                            <td>{{defenderDead.rams}}</td>
+                            <td>{{defenderDead.catapults}}</td>
+                            <td>{{defenderDead.berserkers}}</td>
+                            <td>{{defenderDead.trebuchets}}</td>
+                            <td>{{defenderDead.noblemen}}</td>
+                            <td>{{defenderDead.paladin}}</td>
+                        </tr>
+                        <tr>
+                            <td>Revived</td>
+                            <td>{{defenderRevived.spearmen}}</td>
+                            <td>{{defenderRevived.swordsmen}}</td>
+                            <td>{{defenderRevived.axemen}}</td>
+                            <td>{{defenderRevived.archers}}</td>
+                            <td>{{defenderRevived.lightCavalry}}</td>
+                            <td>{{defenderRevived.mountedArchers}}</td>
+                            <td>{{defenderRevived.heavyCavalry}}</td>
+                            <td>{{defenderRevived.rams}}</td>
+                            <td>{{defenderRevived.catapults}}</td>
+                            <td>{{defenderRevived.berserkers}}</td>
+                            <td>{{defenderRevived.trebuchets}}</td>
+                            <td>{{defenderRevived.noblemen}}</td>
+                            <td>{{defenderRevived.paladin}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                {{#if defmodOk}}
+                <button class="btn btn-success" disabled>{{defmod}}%</button>
+                {{else}}
+                <button class="btn btn-danger" disabled>{{defmod}}%</button>
+                {{/if}}
+           </div>
+           {{#if walldmg}}
+           <h4>Wall has been reduced to level {{finalwall}}.</h4>
+           {{else}}
+           <h4>Wall has taken no damage.</h4>
+           {{/if}}
+        </div>
+    </div>
+    <div class="row round coin"> <!-- #cambio# -->
+        If you found this tool helpful, consider making a donation so I can keep developing amazing software!
+        <br>
+        <div class="col-sm-4">
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="S326NJBT4C8EU">
+                <input type="image" src="https://www.paypalobjects.com/es_XC/AR/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+            </form>
+        </div>
+        
+        <div class="col-sm-4">
+        <img src="http://tw2battlesim.hopto.org/images/bitcoin.ico" style="width: 5%">
+        <input type="text" value="1NFG7TTuhg2Qir1sXL8TMXKJxA9HaTRuA4" id="myInput">
+        <button onclick="copy()">Copy</button>
+        </div>
+    </div>
+</div>

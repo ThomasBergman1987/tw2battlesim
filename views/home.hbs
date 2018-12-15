@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+</head>
+
+<body>
+  <div>
+    <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div class="container">
+          <div class="row">
+            <h1>TW2 Battle Simulator</h1> <p style="font-size: 15px">[BETA]</p>
+            <form action="/send" method="post" id="calcFramework"> <!-- #cambio# -->
+              <div class="col-sm-6" id="div_troops"> <!-- #cambio# -->
+                <h3>Troops</h3>
+                <div class="col-sm-6" id="div_attack"> <!-- #cambio# -->
+                  <h4>Attacker</h4><br>
+                  <div class="row">
+                    <i class="ra ra-spades ra-2x" title="Spearmen"></i>
+                    <!-- <input type="range" min="1" max="100" value="50" class="slider" name="attacker.spearmen"> -->
+                    <input class="troops" name="attacker.spearmen" type="number">
+                  </div>
+                  <div class="row">
+                    <i class="ra ra-sword ra-2x"></i>
+                    <input class="troops" name="attacker.swordsmen" type="number">
+                  </div>
+                  <div class="row">
+                    <i class="ra ra-axe ra-2x"></i>
+                    <input class="troops" name="attacker.axemen" type="number">
+                  </div>
+                  <div class="row">
+                    <i class="ra ra-archer ra-2x"></i>
+                    <input class="troops" name="attacker.archers" type="number">
+                  </div>
+                  <div class="row">
+                    <i class="ra ra-horseshoe ra-2x"></i>
+                    <i class="ra ra-grappling-hook ra-2x"></i>
+                    <input class="troops" name="attacker.lightCavalry" type="number">
+                  </div>
+                  <div class="row">
+                    <i class="ra ra-horseshoe ra-2x"></i>
+                    <i class="ra ra-arrow-flights ra-2x"></i>
+                    <input class="troops" name="attacker.mountedArchers" type="number">
+                  </div>
+                  <div class="row">
+                    <i class="ra ra-horseshoe ra-2x"></i>
+                    <i class="ra ra-broadhead-arrow ra-2x"></i>
+                    <input class="troops" name="attacker.heavyCavalry" type="number">
+                  </div>
+                  <div class="row">
+                    <i class="ra ra-thorny-vine ra-2x"></i>
+                    <input class="troops" name="attacker.rams" type="number">
+                  </div>
+                  <div class="row">
+                    <i class="ra ra-burning-meteor ra-2x"></i>
+                    <input class="troops" name="attacker.catapults" type="number">
+                  </div>
+                  <div class="row">
+                    <i class="ra ra-dripping-sword ra-2x"></i>
+                    <input class="troops" name="attacker.berserkers" type="number">
+                  </div>
+                  <div class="row">
+                    <i class="ra ra-heavy-fall ra-2x"></i>
+                    <input class="troops" name="attacker.trebuchets" type="number">
+                  </div>
+                  <div class="row">
+                    <i class="ra ra-crown ra-2x"></i>
+                    <input class="troops" name="attacker.noblemen" type="number">
+                  </div>
+                  <div class="row">
+                    <i class="ra ra-aura ra-2x"></i>
+                    <input class="troops" name="attacker.paladin" type="number">
+                  </div>
+                </div>
+                <div class="col-sm-6" style="float: right;" id="div_defense"> <!-- #cambio# -->
+                  <h4>Defender</h4><br>
+                  <div class="row">
+                    <i class="ra ra-spades ra-2x"></i>
+                    <input class="troops" name="defender.spearmen" type="number">
+                  </div>
+                  <div class="row">
+                    <i class="ra ra-sword ra-2x"></i>
+                    <input class="troops" name="defender.swordsmen" type="number">
+                  </div>
+                  <div class="row">
+                    <i class="ra ra-axe ra-2x"></i>
+                    <input class="troops" name="defender.axemen" type="number">
+                  </div>
+                  <div class="row">
+                    <i class="ra ra-archer ra-2x"></i>
+                    <input class="troops" name="defender.archers" type="number">
+                  </div>
+                  <div class="row">
+                    <i class="ra ra-horseshoe ra-2x"></i>
+                    <i class="ra ra-grappling-hook ra-2x"></i>
+                    <input class="troops" name="defender.lightCavalry" type="number">
+                  </div>
+                  <div class="row">
+                    <i class="ra ra-horseshoe ra-2x"></i>
+                    <i class="ra ra-arrow-flights ra-2x"></i>
+                    <input class="troops" name="defender.mountedArchers" type="number">
+                  </div>
+                  <div class="row">
+                    <i class="ra ra-horseshoe ra-2x"></i>
+                    <i class="ra ra-broadhead-arrow ra-2x"></i>
+                    <input class="troops" name="defender.heavyCavalry" type="number">
+                  </div>
+                  <div class="row">
+                    <i class="ra ra-thorny-vine ra-2x"></i>
+                    <input class="troops" name="defender.rams" type="number">
+                  </div>
+                  <div class="row">
+                    <i class="ra ra-burning-meteor ra-2x"></i>
+                    <input class="troops" name="defender.catapults" type="number">
+                  </div>
+                  <div class="row">
+                    <i class="ra ra-dripping-sword ra-2x"></i>
+                    <input class="troops" name="defender.berserkers" type="number">
+                  </div>
+                  <div class="row">
+                    <i class="ra ra-heavy-fall ra-2x"></i>
+                    <input class="troops" name="defender.trebuchets" type="number">
+                  </div>
+                  <div class="row">
+                    <i class="ra ra-crown ra-2x"></i>
+                    <input class="troops" name="defender.noblemen" type="number">
+                  </div>
+                  <div class="row">
+                    <i class="ra ra-aura ra-2x"></i>
+                    <input class="troops" name="defender.paladin" type="number">
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-sm-6" id="div_modifiers"> <!-- #cambio# -->
+                <h3>Modifiers</h3>
+                <div class="col-sm-6">
+                  <h4>Attacker</h4><br>
+                  <p>Medic:
+                    <input name="attack.medic" type="checkbox" id="switch" />
+                    <label for="switch">Toggle</label>
+                  </p>
+                  <p>Grandmaster:
+                    <input name="attack.grandmaster" type="checkbox" id="grandmaster" />
+                    <label for="grandmaster">Toggle</label>
+                  </p>
+                  <p>Church level:
+                    <select name="attack.church">
+                      <option selected value="0">
+                        0
+                      </option>
+                      <option value="1">
+                        1
+                      </option>
+                      <option value="2">
+                        2
+                      </option>
+                      <option value="3">
+                        3
+                      </option>
+                    </select>
+                  </p>
+                  <p>Morale:
+                    <input class="troops" name="attack.morale" value="100" type="number">
+                  </p>
+                  <p>Luck:
+                    <select name="attack.luck">
+                      <option value="-15%">
+                        -15%
+                      </option>
+                      <option value="-14%">
+                        -14%
+                      </option>
+                      <option value="-13%">
+                        -13%
+                      </option>
+                      <option value="-12%">
+                        -12%
+                      </option>
+                      <option value="-11%">
+                        -11%
+                      </option>
+                      <option value="-10%">
+                        -10%
+                      </option>
+                      <option value="-9%">
+                        -9%
+                      </option>
+                      <option value="-8%">
+                        -8%
+                      </option>
+                      <option value="-7%">
+                        -7%
+                      </option>
+                      <option value="-6%">
+                        -6%
+                      </option>
+                      <option value="-5%">
+                        -5%
+                      </option>
+                      <option value="-4%">
+                        -4%
+                      </option>
+                      <option value="-3%">
+                        -3%
+                      </option>
+                      <option value="-2%">
+                        -2%
+                      </option>
+                      <option value="-1%">
+                        -1%
+                      </option>
+                      <option selected value="0%">
+                        0%
+                      </option>
+                      <option value="1%">
+                        1%
+                      </option>
+                      <option value="2%">
+                        2%
+                      </option>
+                      <option value="3%">
+                        3%
+                      </option>
+                      <option value="4%">
+                        4%
+                      </option>
+                      <option value="5%">
+                        5%
+                      </option>
+                      <option value="6%">
+                        6%
+                      </option>
+                      <option value="7%">
+                        7%
+                      </option>
+                      <option value="8%">
+                        8%
+                      </option>
+                      <option value="9%">
+                        9%
+                      </option>
+                      <option value="10%">
+                        10%
+                      </option>
+                      <option value="11%">
+                        11%
+                      </option>
+                      <option value="12%">
+                        12%
+                      </option>
+                      <option value="13%">
+                        13%
+                      </option>
+                      <option value="14%">
+                        14%
+                      </option>
+                      <option value="15%">
+                        15%
+                      </option>
+                    </select>
+                  </p>
+                  <p>Weapon mastery:
+                    <select name="attack.mastery">
+                      <option selected value="0">
+                        0
+                      </option>
+                      <option value="1">
+                        1
+                      </option>
+                      <option value="2">
+                        2
+                      </option>
+                      <option value="3">
+                        3
+                      </option>
+                      <option value="4">
+                        4
+                      </option>
+                      <option value="5">
+                        5
+                      </option>
+                    </select>
+                  </p>
+                  <p>Paladin weapon:
+                    <select name="attack.weapon">
+                      <option selected value="">
+                        None
+                      </option>
+                      <option value="spearmen">
+                        Halberd of Guan Yu
+                      </option>
+                      <option value="swordsmen">
+                        Paracelsus' Longsword
+                      </option>
+                      <option value="axemen">
+                        Thorgard's Battle Axe
+                      </option>
+                      <option value="archers">
+                        Nimrod's Longbow
+                      </option>
+                      <option value="lightCavalry">
+                        Mieszko's Lance
+                      </option>
+                      <option value="mountedArchers">
+                        Nimrod's Composite Bow
+                      </option>
+                      <option value="heavyCavalry">
+                        Baptiste's Banner
+                      </option>
+                      <option value="rams">
+                        Carol's Morning Star
+                      </option>
+                      <option value="catapults">
+                        Aletheia's Bonfire
+                      </option>
+                    </select>
+                  </p>
+                  <p>Weapon level:
+                    <select name="attack.weaponLvl">
+                      <option value="1">
+                        1
+                      </option>
+                      <option value="2">
+                        2
+                      </option>
+                      <option value="3">
+                        3
+                      </option>
+                    </select>
+                  </p>
+                </div>
+                <div class="col-sm-6">
+                  <h4>Defender</h4><br>
+                  <p>Hospital:
+                    <select name="defense.hospital">
+                      <option selected value="0">
+                        0
+                      </option>
+                      <option value="1">
+                        1
+                      </option>
+                      <option value="2">
+                        2
+                      </option>
+                      <option value="3">
+                        3
+                      </option>
+                      <option value="4">
+                        4
+                      </option>
+                      <option value="5">
+                        5
+                      </option>
+                      <option value="6">
+                        6
+                      </option>
+                      <option value="7">
+                        7
+                      </option>
+                      <option value="8">
+                        8
+                      </option>
+                      <option value="9">
+                        9
+                      </option>
+                      <option value="10">
+                        10
+                      </option>
+                    </select>
+                  </p>
+                  <p>Medicus:
+                    <select name="defense.medicus">
+                      <option selected value="0">
+                        0
+                      </option>
+                      <option value="1">
+                        1
+                      </option>
+                      <option value="2">
+                        2
+                      </option>
+                      <option value="3">
+                        3
+                      </option>
+                      <option value="4">
+                        4
+                      </option>
+                      <option value="5">
+                        5
+                      </option>
+                      <option value="6">
+                        6
+                      </option>
+                      <option value="7">
+                        7
+                      </option>
+                      <option value="8">
+                        8
+                      </option>
+                      <option value="9">
+                        9
+                      </option>
+                      <option value="10">
+                        10
+                      </option>
+                    </select>
+                  </p>
+                  <p>Church level:
+                    <select name="defense.church">
+                      <option value="0">
+                        0
+                      </option>
+                      <option value="1">
+                        1
+                      </option>
+                      <option value="2">
+                        2
+                      </option>
+                      <option value="3">
+                        3
+                      </option>
+                    </select>
+                  </p>
+                  <p>Iron wall:
+                    <select name="defense.ironWall">
+                      <option selected value="0">
+                        0
+                      </option>
+                      <option value="1">
+                        1
+                      </option>
+                      <option value="2">
+                        2
+                      </option>
+                      <option value="3">
+                        3
+                      </option>
+                      <option value="4">
+                        4
+                      </option>
+                      <option value="5">
+                        5
+                      </option>
+                    </select>
+                  </p>
+                  <p>Wall level:
+                    <select name="defense.wall">
+                      <option selected value="0">
+                        0
+                      </option>
+                      <option value="1">
+                        1
+                      </option>
+                      <option value="2">
+                        2
+                      </option>
+                      <option value="3">
+                        3
+                      </option>
+                      <option value="4">
+                        4
+                      </option>
+                      <option value="5">
+                        5
+                      </option>
+                      <option value="6">
+                        6
+                      </option>
+                      <option value="7">
+                        7
+                      </option>
+                      <option value="8">
+                        8
+                      </option>
+                      <option value="9">
+                        9
+                      </option>
+                      <option value="10">
+                        10
+                      </option>
+                      <option value="11">
+                        11
+                      </option>
+                      <option value="12">
+                        12
+                      </option>
+                      <option value="13">
+                        13
+                      </option>
+                      <option value="14">
+                        14
+                      </option>
+                      <option value="15">
+                        15
+                      </option>
+                      <option value="16">
+                        16
+                      </option>
+                      <option value="17">
+                        17
+                      </option>
+                      <option value="18">
+                        18
+                      </option>
+                      <option value="19">
+                        19
+                      </option>
+                      <option value="20">
+                        20
+                      </option>
+                    </select>
+                  </p>
+                  <p>Paladin weapon:
+                    <select name="defense.weapon">
+                      <option selected value="">
+                        None
+                      </option>
+                      <option value="spearmen">
+                        Halberd of Guan Yu
+                      </option>
+                      <option value="swordsmen">
+                        Paracelsus' Longsword
+                      </option>
+                      <option value="axemen">
+                        Thorgard's Battle Axe
+                      </option>
+                      <option value="archers">
+                        Nimrod's Longbow
+                      </option>
+                      <option value="lightCavalry">
+                        Mieszko's Lance
+                      </option>
+                      <option value="mountedArchers">
+                        Nimrod's Composite Bow
+                      </option>
+                      <option value="heavyCavalry">
+                        Baptiste's Banner
+                      </option>
+                      <option value="rams">
+                        Carol's Morning Star
+                      </option>
+                      <option value="catapults">
+                        Aletheia's Bonfire
+                      </option>
+                    </select>
+                  </p>
+                  <p>Weapon level:
+                    <select name="defense.weaponLvl">
+                      <option value="1">
+                        1
+                      </option>
+                      <option value="2">
+                        2
+                      </option>
+                      <option value="3">
+                        3
+                      </option>
+                    </select>
+                  </p>
+                </div>
+            
+    
+              </div>
+              <div class="col-sm-6" id="div_button"> <!-- #cambio# -->
+                    <div class="col-sm-12 wrapper">
+                      <input class="button" type="submit" value="Submit">
+                    </div>
+                  </div>
+            </form>
+          </div>
+        </div>
+  </div>
+  </div>
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+</html>
